@@ -26,7 +26,7 @@ function validation_log(){
     let first = password.charCodeAt(0);
     let length = password.length;
 
-    if(result == true && (first >= 65 && first <= 90) && special(password) == true && length == 8 && password.includes(" ") == false){
+    if(result == true && (first >= 65 && first <= 90) && special(password) == true && length >= 8 && password.includes(" ") == false){
         alert("login successfully");
         window.location = "home.html";
     }
@@ -44,7 +44,7 @@ function validation_sign(){
     let phone = document.getElementById("mobile").value;
     let phonel = phone.length;
 
-    if(result2 == true && (first2 >= 65 && first2 <= 90) && special(password2) == true && length2 == 8 && password2.includes(" ") == false && phonel == 11){
+    if(result2 == true && (first2 >= 65 && first2 <= 90) && special(password2) == true && length2 >= 8 && password2.includes(" ") == false && phonel == 11){
         if(document.getElementById('male').checked) {
             alert("Sign up successfully, returning to sign in page");
             window.location = "index.html";
